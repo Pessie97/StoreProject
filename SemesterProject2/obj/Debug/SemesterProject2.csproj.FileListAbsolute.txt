@@ -1,0 +1,17 @@
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.csprojAssemblyReference.cache
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.Properties.Resources.resources
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.csproj.GenerateResource.cache
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.csproj.CoreCompileInputs.cache
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.AccountDetail.resources
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.customerPage.resources
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.MakePurchase.resources
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.LoginPg.resources
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.PastPurchases.resources
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.ViewStoreItems.resources
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\bin\Debug\SemesterProject2.exe.config
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\bin\Debug\SemesterProject2.exe
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\bin\Debug\SemesterProject2.pdb
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.exe
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.pdb
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.MakePayment.resources
+C:\Users\pessi\Source\Repos\SemesterProject2\SemesterProject2\obj\Debug\SemesterProject2.MakePurchaseVerification.resources

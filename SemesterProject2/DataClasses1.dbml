@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="C#_Project" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-HPI1CQSQ\SQLEXPRESS;Initial Catalog=C#_Project;Integrated Security=True" SettingsObjectName="SemesterProject2.Properties.Settings" SettingsPropertyName="C__ProjectConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Store" Member="Stores">
+    <Type Name="Store">
+      <Column Name="productID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="productPrice" Type="System.Decimal" DbType="Decimal(5,2) NOT NULL" CanBeNull="false" />
+      <Column Name="productQuantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prodDescription" Type="System.String" DbType="VarChar(45) NOT NULL" CanBeNull="false" />
+      <Association Name="Store_AccountPurchase1" Member="AccountPurchase1s" ThisKey="productID" OtherKey="productID" Type="AccountPurchase1" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AccountPurchases" Member="AccountPurchase1s">
+    <Type Name="AccountPurchase1">
+      <Column Name="customerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="productID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="totalCost" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="purchaseDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="purchaseId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="prodDescription" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Association Name="Store_AccountPurchase1" Member="Store" ThisKey="productID" OtherKey="productID" Type="Store" IsForeignKey="true" />
+      <Association Name="Customer1_AccountPurchase1" Member="Customer1" ThisKey="customerID" OtherKey="customerID" Type="Customer1" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer" Member="Customer1s">
+    <Type Name="Customer1">
+      <Column Name="customerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="customerName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="customerBalance" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="credit" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Association Name="Customer1_AccountPurchase1" Member="AccountPurchase1s" ThisKey="customerID" OtherKey="customerID" Type="AccountPurchase1" />
+    </Type>
+  </Table>
+</Database>
